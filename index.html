@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Web Hosting, VPS, Dedicated Servers & Cloud Solutions">
+    <title>Affordable Minecraft Server hosting | Ateex.Cloud</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-cloud"></i> CloudHost
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Game Hosting</a></li>
+                <li class="dropdown">
+                    <a href="#games">Other Hosting <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#vps-hosting">Vps Hosting</a></li>
+                        <li><a href="#vps-hosting">Web Hosting</a></li>
+                        <li><a href="#dedicated-servers">Bot Hosting</a></li>
+                        <li><a href="#cloud-solutions">Reseller WebHosting</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#pricing">Important <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#terms">Commitment</a></li>
+                        <li><a href="#privacy">Career</a></li>
+                        <li><a href="#refund">About Us</a></li>
+                        <li><a href="#sla">Contact US</a></li>
+                        <li><a href="#faq">infrastructure</a></li>
+                        <li><a href="#support">PartnerShip</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#pricing">Legal <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#terms">Terms of Service</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#refund">Refund Policy</a></li>
+                        <li><a href="#sla">Usage Policy</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <video id="hero-video" class="hero-video" autoplay muted loop playsinline poster="assets/images/fallback.jpg">
+            <source src="assets/videos/minecraft/hero-bg.webm" type="video/webm">
+        </video>
+        
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-content">
+            <h1 id="hero-title">Minecraft Server Hosting</h1>
+            
+            <p id="hero-desc">High-performance Minecraft server hosting with low latency, DDoS protection, and 24/7 support.</p>
+
+            <div class="hero-price">
+                Starting at <span id="hero-price">$1.00</span>
+            </div>
+
+            <a href="#pricing" class="btn-cta">Get Started</a>
+
+            <div class="hero-tabs">
+                <button class="tab-btn active" onclick="switchTab('minecraft', this)">
+                    <i class="fa-solid fa-cube"></i> Minecraft Hosting
+                </button>
+
+                <button class="tab-btn" onclick="switchTab('vps', this)">
+                    <i class="fa-solid fa-server"></i> VPS Hosting
+                </button>
+
+                <button class="tab-btn" onclick="switchTab('web', this)">
+                    <i class="fa-solid fa-globe"></i> Web Hosting
+                </button>
+
+                <button class="tab-btn" onclick="switchTab('discord', this)">
+                    <i class="fa-brands fa-discord"></i> Discord Bot Hosting
+                </button>
+            </div>
+        </div>
+        <div class="hero-bg"></div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div style="text-align: center; width: 100%;">
+            <div class="premium-badge">
+                <i class="fa-solid fa-star"></i> Premium Features
+            </div>
+        </div>
+        <div class="container">
+            <h2>
+                Cutting-Edge <span class="text-gradient">Features</span>
+            </h2>
+            <h5>Discover unparalleled server management and security for a superior hosting experience.</h5>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Robust Infrastructure</h3>
+                    <p>SSD Storage & CDN included for blazing fast load times</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Global Reach</h3>
+                    <p>SSL Certificates, DDoS Protection & Daily Backups included</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>DDoS Protection</h3>
+                    <p>Expert support team available round the clock via chat, email & phone</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Easy Game Panel</h3>
+                    <p>Upgrade anytime as your business grows without downtime</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Trusted Excellence</h3>
+                    <p>SLA guaranteed uptime with redundant infrastructure</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>99% Uptime</h3>
+                    <p>Choose server location: USA, Europe, Asia & more</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- games section -->
+    <section class="games" id="games">
+        
+        <div class="container">
+            <h2>
+                <span class="text-gradient">Power Up</span> Your Gaming</span>
+            </h2>
+        </div>
+
+        <h5>ultra-low latency servers with premium hardware and 24/7 support</h5>
+
+        <!-- games sidebar -->
+        <div class="games-sidebar">
+            <div class="games-sidebar-header">
+                <i class="fa-solid fa-server"></i> Available GAmes 
+            </div>
+
+            <div class="games-list">
+                <a href="#" class="game-item terraria">
+                    <span class="dot orange"></span> Terraria
+                </a>
+
+                <a href="#" class="game-item minecraft active">
+                    <span class="dot green"></span> Minecraft
+                    <span class="badge">Popular</span>
+                </a>
+
+                <a href="#" class="game-item palworld">
+                    <span class="dot blue"></span> Palworld
+                </a>
+
+                <a href="#" class="game-item velheim">
+                    <span class="dot yellow"></span> Velheim
+                </a>
+
+                <a href="#" class="game-item gta">
+                    <span class="dot purple"></span> GTA V
+                    <span class="badge">Popular</span>
+                </a>
+
+                <a href="#" class="game-item ark">
+                    <span class="dot green"></span> ARK Survival
+                </a>
+
+                <a href="#" class="game-item rust">
+                    <span class="dot red"></span> Rust
+                </a>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>CloudHost</h4>
+                    <p>Your trusted hosting partner since 2020</p>
+                </div>
+                <div class="footer-section">
+                    <h4>games</h4>
+                    <ul>
+                        <li><a href="#shared-hosting">Shared Hosting</a></li>
+                        <li><a href="#vps-hosting">VPS Hosting</a></li>
+                        <li><a href="#dedicated-servers">Dedicated Servers</a></li>
+                        <li><a href="#cloud-solutions">Cloud Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">SLA</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 CloudHost. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/whmcs-integration.js"></script>
+    <script>
+    const tabData = {
+        minecraft: {
+            title: "Minecraft Server Hosting",
+            desc: "High-performance Minecraft server hosting with low latency, DDoS protection, and 24/7 support.",
+            price: "$1.00",
+            bg: [
+                "assets/videos/minecraft/mbg1.webm",
+                "assets/videos/minecraft/mbg2.webm",
+                "assets/videos/minecraft/mbg3.webm"
+            ]
+        },
+        vps: {
+            title: "VPS Hosting",
+            desc: "Powerful VPS hosting with full root access, NVMe storage, and global locations for maximum speed.",
+            price: "$3.00",
+            bg: [
+                "assets/videos/vps/vpsbg1.mp4"
+            ]
+        },
+        web: {
+            title: "Web Hosting",
+            desc: "Fast and affordable web hosting for websites, blogs, and online projects with 99.9% uptime.",
+            price: "$1.00",
+            bg: [
+                "assets/videos/web/webbg1.mp4"
+            ]
+        },
+        discord: {
+            title: "Discord Bot Hosting",
+            desc: "Reliable Discord bot hosting with ultra-low latency and always-on uptime for your community.",
+            price: "$1.00",
+            bg: [
+                "assets/videos/discord/dbg1.mp4"
+            ]
+        }
+    };
+        // --- 1. RANDOM TAB & VIDEO ON LOAD ---
+        document.addEventListener("DOMContentLoaded", function() {
+        const keys = Object.keys(tabData); // ['minecraft', 'vps', 'web', 'discord']
+        const randomTabName = keys[Math.floor(Math.random() * keys.length)];
+        const data = tabData[randomTabName];
+        
+        // 1. Update the Content to match the random tab
+        document.getElementById('hero-title').innerText = data.title;
+        document.getElementById('hero-desc').innerText = data.desc;
+        document.getElementById('hero-price').innerText = data.price;
+        
+        // 2. Play a random video from that tab
+        const video = document.getElementById('hero-video');
+        if (video && data.bg.length > 0) {
+            video.src = data.bg[Math.floor(Math.random() * data.bg.length)];
+            video.play().catch(e => console.log("Autoplay waiting"));
+        }
+
+        // 3. Highlight the correct button
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.classList.remove('active');
+            // Check if this button's onclick contains the random tab name
+            if(btn.getAttribute('onclick').includes(`'${randomTabName}'`)) {
+                btn.classList.add('active');
+            }
+        });
+    });
+        
+        // Combine all videos for the initial random load
+        const allVideos = [
+            ...tabData.minecraft.bg, 
+            ...tabData.vps.bg, 
+            ...tabData.web.bg,
+            ...tabData.discord.bg
+        ];
+
+        if (video && allVideos.length > 0) {
+            const randomVideo = allVideos[Math.floor(Math.random() * allVideos.length)];
+            video.src = randomVideo;
+            // Catch error if user hasn't interacted yet
+            video.play().catch(e => console.log("Autoplay waiting for interaction"));
+        }
+
+    // --- 2. SWITCH TAB FUNCTION ---
+    function switchTab(tabName, btnElement) {
+        const data = tabData[tabName];
+        if (!data) return;
+
+        // Get elements by ID
+        const title = document.getElementById('hero-title');
+        const desc = document.getElementById('hero-desc');
+        const price = document.getElementById('hero-price');
+        const video = document.getElementById('hero-video');
+
+        // Animation: Fade Out
+        if(title) title.style.opacity = 0;
+        if(desc) desc.style.opacity = 0;
+        if(price) price.parentElement.style.opacity = 0;
+
+        setTimeout(() => {
+            // Update Text Content
+            if(title) title.innerText = data.title;
+            if(desc) desc.innerText = data.desc;
+            if(price) price.innerText = data.price;
+
+            // Animation: Fade In
+            if(title) title.style.opacity = 1;
+            if(desc) desc.style.opacity = 1;
+            if(price) price.parentElement.style.opacity = 1;
+        }, 200);
+
+        // Update Video
+        if (video && data.bg && data.bg.length > 0) {
+            // Pick a random video from THIS tab's specific folder list
+            const randomTabVideo = data.bg[Math.floor(Math.random() * data.bg.length)];
+            video.src = randomTabVideo;
+            video.load();
+            video.play().catch(e => console.log("Video play error (likely file missing)"));
+        }
+
+        // Update Button Active State
+        document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+        btnElement.classList.add('active');
+    }
+</script>
+</body>
+</html>
