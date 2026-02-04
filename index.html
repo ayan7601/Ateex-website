@@ -32,7 +32,7 @@
                     <ul class="dropdown-menu">
                         <li><a href="#terms">Commitment</a></li>
                         <li><a href="#privacy">Career</a></li>
-                        <li><a href="#refund">About Us</a></li>
+                        <li><a href="#about">About Us</a></li>
                         <li><a href="#sla">Contact US</a></li>
                         <li><a href="#faq">infrastructure</a></li>
                         <li><a href="#support">PartnerShip</a></li>
@@ -153,7 +153,7 @@
 
         <h5>ultra-low latency servers with premium hardware and 24/7 support</h5>
 
-        <div class="container games-container">
+        <div id="game-container" class="container games-container">
             <!-- games sidebar -->
             <div class="games-sidebar">
                 <div class="games-sidebar-header">
@@ -161,33 +161,33 @@
                 </div>
 
                 <div class="games-list">
-                    <a href="javascript:void(0)" class="game-item terraria" onclick="showGame('terraria', this)">
+                    <a href="javascript:void(0)" id="game-terraria" class="game-item terraria" onclick="showGame('terraria', this)">
                         <span class="dot orange"></span> Terraria
                     </a>
 
-                    <a href="javascript:void(0)" class="game-item minecraft active" onclick="showGame('minecraft', this)">
+                    <a href="javascript:void(0)" id="game-minecraft" class="game-item minecraft active" onclick="showGame('minecraft', this)">
                         <span class="dot green"></span> Minecraft
                         <span class="badge">Popular</span>
                     </a>
 
-                    <a href="javascript:void(0)" class="game-item palworld" onclick="showGame('palworld', this)">
+                    <a href="javascript:void(0)" id="game-palworld" class="game-item palworld" onclick="showGame('palworld', this)">
                         <span class="dot blue"></span> Palworld
                     </a>
 
-                    <a href="javascript:void(0)" class="game-item velheim" onclick="showGame('velheim', this)">
+                    <a href="javascript:void(0)" id="game-valheim" class="game-item velheim" onclick="showGame('velheim', this)">
                         <span class="dot yellow"></span> Velheim
                     </a>
 
-                    <a href="javascript:void(0)" class="game-item gta" onclick="showGame('gta', this)">
+                    <a href="javascript:void(0)" id="game-gta" class="game-item gta" onclick="showGame('gta', this)">
                         <span class="dot purple"></span> GTA V
                         <span class="badge">Popular</span>
                     </a>
 
-                    <a href="javascript:void(0)" class="game-item ark" onclick="showGame('ark', this)">
+                    <a href="javascript:void(0)" id="game-ark" class="game-item ark" onclick="showGame('ark', this)">
                         <span class="dot green"></span> ARK Survival
                     </a>
 
-                    <a href="javascript:void(0)" class="game-item rust" onclick="showGame('rust', this)">
+                    <a href="javascript:void(0)" id="game-rust" class="game-item rust" onclick="showGame('rust', this)">
                         <span class="dot red"></span> Rust
                     </a>
                 </div>
@@ -318,11 +318,10 @@
                 <div class="footer-section">
                     <h4>Game Server</h4>
                     <ul>
-                        <li><a href="#">Minecraft Hosting</a></li>
-                        <li><a href="#">GTA V</a></li>
-                        <li><a href="#">Palworld</a></li>
-                        <li><a href="#">Rust</a></li>
-                        <li><a href="#">View All Games</a></li>
+                        <li><a href="#game-container" onclick="showGame('minecraft', document.getElementById('game-minecraft'))">Minecraft Hosting</a></li>
+                        <li><a href="#game-container" onclick="showGame('gta', document.getElementById('game-gta'))">GTA V</a></li>
+                        <li><a href="#game-container" onclick="showGame('palworld', document.getElementById('game-palworld'))">Palworld</a></li>
+                        <li><a href="#game-container">View All Games</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
