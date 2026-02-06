@@ -20,7 +20,7 @@
       <div class="container">
         <div class="logo"><i class="fas fa-cloud"></i> CloudHost</div>
         <ul class="nav-menu">
-          <li><a href="#home">Home</a></li>
+          <li><a href="../index.html">Home</a></li>
           <li><a href="#features">Game Hosting</a></li>
           <li class="dropdown">
             <a href="#games"
@@ -65,12 +65,16 @@
     <!-- Hero Section -->
     <section class="hero">
       <picture id="hero-image" class="hero-image">
-        <source src="../assets/images/games/minecraft.jpg" type="image/jpeg" />
+        <source
+          src="../assets/images/plans/minecraft/hero-bg.jpg"
+          type="image/jpeg"
+        />
         <img
-          src="../assets/images/games/minecraft.jpg"
+          src="../assets/images/plans/minecraft/hero-bg.jpg"
           alt="Minecraft Server Hosting"
         />
       </picture>
+      <div class="hero-overlay" aria-hidden="true"></div>
 
       <div class="hero-content">
         <h1 id="hero-title">Minecraft Server Hosting</h1>
@@ -82,40 +86,411 @@
       </div>
     </section>
 
-		<!-- Plans Section -->
-    <section class="plans">
+    <!-- Infrastructure Section -->
+    <section class="infrastructure">
+      <div class="container">
+        <div class="infrastructure-card">
+          <!-- India -->
+          <div class="location">
+            <div class="location-header">
+              <span class="location-code">IN</span>
+              <h3>India</h3>
+            </div>
+            <ul class="server-specs">
+              <li><i class="fas fa-microchip"></i> AMD EPYC</li>
+              <li><i class="fas fa-microchip"></i> Intel Plantinium 8168</li>
+            </ul>
+          </div>
 
+          <!-- Singapore -->
+          <div class="location">
+            <div class="location-header">
+              <span class="location-code">SG</span>
+              <h3>Singapore</h3>
+            </div>
+            <ul class="server-specs">
+              <li><i class="fas fa-microchip"></i> AMD EPYC</li>
+              <li><i class="fas fa-microchip"></i> Intel Haswell</li>
+            </ul>
+          </div>
+
+          <!-- Germany -->
+          <div class="location">
+            <div class="location-header">
+              <span class="location-code">DE</span>
+              <h3>Germany</h3>
+            </div>
+            <ul class="server-specs">
+              <li><i class="fas fa-microchip"></i> AMD EPYC</li>
+              <li><i class="fas fa-microchip"></i> Intel Gold 6150</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Plans Section -->
+    <section class="plans" id="plans">
       <div class="plans-content">
-
         <div style="text-align: center; width: 100%">
-
           <div class="premium-badge">
             <i class="fa-solid fa-star"></i> Minecraft Server
           </div>
-
         </div>
 
         <h2 id="plans-title">
           Choose Your <span class="text-gradient">Minecraft Plan</span>
         </h2>
 
-        <h5 id="plans-desc">Select the best plan tailored for your needs.</h5>
-
+        <p id="plans-desc">Select the best plan tailored for your needs.</p>
       </div>
 
-			<div class="plans-tables">
+      <!-- plan cards -->
+      <div class="container">
+        <div class="plans-grid">
 
-				<div style="text-align: center; width: 100%">
-					<button class="plans-btn-active" onclick="switchTables('premium', this)">
-						<i class="fa-solid fa-cube"></i> Premium
-					</button>
+          <article class="plan-card">
+            <div class="plan-badge has-image">
+              <img
+                class="plan-badge-image"
+                src="../assets/images/plans/minecraft/gravel.png"
+                alt="Starter plan badge"
+              />
+            </div>
+            <h3>Gravel Plan</h3>
+            <div class="plan-price">
+              <span class="price">$1</span>
+              <span class="period">/month</span>
+            </div>
+            <ul class="plan-features">
+              <li><i class="fa-solid fa-microchip"></i> 2 vCPU</li>
+              <li><i class="fa-solid fa-memory"></i> 4 GB RAM</li>
+              <li><i class="fa-solid fa-hard-drive"></i> 30 GB NVMe</li>
+              <li><i class="fa-solid fa-shield-halved"></i> DDoS Protection</li>
+            </ul>
+            <a class="btn-start plan-cta" href="#plans">Choose Starter</a>
+          </article>
 
-					<button class="plans-btn" onclick="switchTables('deluxe', this)">
-						<i class="fa-solid fa-cube"></i> Deluxe
-					</button>
-				</div>
-			</div>
+          <article class="plan-card">
+            <div class="plan-badge has-image">
+              <img
+                class="plan-badge-image"
+                src="../assets/images/plans/minecraft/andesite.png"
+                alt="Most popular plan badge"
+              />
+            </div>
+            <h3>Andesite Plan</h3>
+            <div class="plan-price">
+              <span class="price">$2</span>
+              <span class="period">/month</span>
+            </div>
+            <ul class="plan-features">
+              <li><i class="fa-solid fa-microchip"></i> 4 vCPU</li>
+              <li><i class="fa-solid fa-memory"></i> 8 GB RAM</li>
+              <li><i class="fa-solid fa-hard-drive"></i> 60 GB NVMe</li>
+              <li><i class="fa-solid fa-users"></i> Up to 40 players</li>
+            </ul>
+            <a class="btn-start plan-cta" href="#plans">Choose Pro</a>
+          </article>
 
+          <article class="plan-card">
+            <div class="plan-badge has-image">
+              <img
+                class="plan-badge-image"
+                src="../assets/images/plans/minecraft/cobblestone.png"
+                alt="Ultimate plan badge"
+              />
+            </div>
+            <h3>Cobblestone Plan</h3>
+            <div class="plan-price">
+              <span class="price">$3</span>
+              <span class="period">/month</span>
+            </div>
+            <ul class="plan-features">
+              <li><i class="fa-solid fa-microchip"></i> 8 vCPU</li>
+              <li><i class="fa-solid fa-memory"></i> 16 GB RAM</li>
+              <li><i class="fa-solid fa-hard-drive"></i> 120 GB NVMe</li>
+              <li>
+                <i class="fa-solid fa-earth-americas"></i> Global Locations
+              </li>
+            </ul>
+            <a class="btn-start plan-cta" href="#plans">Choose Ultimate</a>
+          </article>
+
+          <article class="plan-card">
+            <div class="plan-badge has-image">
+              <img
+                class="plan-badge-image"
+                src="../assets/images/plans/minecraft/gravel.png"
+                alt="Starter plan badge"
+              />
+            </div>
+            <h3>Stone Plan</h3>
+            <div class="plan-price">
+              <span class="price">$1</span>
+              <span class="period">/month</span>
+            </div>
+            <ul class="plan-features">
+              <li><i class="fa-solid fa-microchip"></i> 2 vCPU</li>
+              <li><i class="fa-solid fa-memory"></i> 4 GB RAM</li>
+              <li><i class="fa-solid fa-hard-drive"></i> 30 GB NVMe</li>
+              <li><i class="fa-solid fa-shield-halved"></i> DDoS Protection</li>
+            </ul>
+            <a class="btn-start plan-cta" href="#plans">Choose Starter</a>
+          </article>
+
+          <article class="plan-card">
+            <div class="plan-badge has-image">
+              <img
+                class="plan-badge-image"
+                src="../assets/images/plans/minecraft/stone.png"
+                alt="Most popular plan badge"
+              />
+            </div>
+            <h3>Coal Plan</h3>
+            <div class="plan-price">
+              <span class="price">$2</span>
+              <span class="period">/month</span>
+            </div>
+            <ul class="plan-features">
+              <li><i class="fa-solid fa-microchip"></i> 4 vCPU</li>
+              <li><i class="fa-solid fa-memory"></i> 8 GB RAM</li>
+              <li><i class="fa-solid fa-hard-drive"></i> 60 GB NVMe</li>
+              <li><i class="fa-solid fa-users"></i> Up to 40 players</li>
+            </ul>
+            <a class="btn-start plan-cta" href="#plans">Choose Pro</a>
+          </article>
+
+          <article class="plan-card">
+            <div class="plan-badge has-image">
+              <img
+                class="plan-badge-image"
+                src="../assets/images/plans/minecraft/iron.png"
+                alt="Ultimate plan badge"
+              />
+            </div>
+            <h3>Iron Plan</h3>
+            <div class="plan-price">
+              <span class="price">$3</span>
+              <span class="period">/month</span>
+            </div>
+            <ul class="plan-features">
+              <li><i class="fa-solid fa-microchip"></i> 8 vCPU</li>
+              <li><i class="fa-solid fa-memory"></i> 16 GB RAM</li>
+              <li><i class="fa-solid fa-hard-drive"></i> 120 GB NVMe</li>
+              <li>
+                <i class="fa-solid fa-earth-americas"></i> Global Locations
+              </li>
+            </ul>
+            <a class="btn-start plan-cta" href="#plans">Choose Ultimate</a>
+          </article>
+
+          <article class="plan-card">
+            <div class="plan-badge has-image">
+              <img
+                class="plan-badge-image"
+                src="../assets/images/plans/minecraft/gold.png"
+                alt="Starter plan badge"
+              />
+            </div>
+            <h3>Gold Plan</h3>
+            <div class="plan-price">
+              <span class="price">$1</span>
+              <span class="period">/month</span>
+            </div>
+            <ul class="plan-features">
+              <li><i class="fa-solid fa-microchip"></i> 2 vCPU</li>
+              <li><i class="fa-solid fa-memory"></i> 4 GB RAM</li>
+              <li><i class="fa-solid fa-hard-drive"></i> 30 GB NVMe</li>
+              <li><i class="fa-solid fa-shield-halved"></i> DDoS Protection</li>
+            </ul>
+            <a class="btn-start plan-cta" href="#plans">Choose Starter</a>
+          </article>
+
+          <article class="plan-card">
+            <div class="plan-badge has-image">
+              <img
+                class="plan-badge-image"
+                src="../assets/images/plans/minecraft/diamond.png"
+                alt="Most popular plan badge"
+              />
+            </div>
+            <h3>Diamond Plan</h3>
+            <div class="plan-price">
+              <span class="price">$2</span>
+              <span class="period">/month</span>
+            </div>
+            <ul class="plan-features">
+              <li><i class="fa-solid fa-microchip"></i> 4 vCPU</li>
+              <li><i class="fa-solid fa-memory"></i> 8 GB RAM</li>
+              <li><i class="fa-solid fa-hard-drive"></i> 60 GB NVMe</li>
+              <li><i class="fa-solid fa-users"></i> Up to 40 players</li>
+            </ul>
+            <a class="btn-start plan-cta" href="#plans">Choose Pro</a>
+          </article>
+
+          <article class="plan-card">
+            <div class="plan-badge has-image">
+              <img
+                class="plan-badge-image"
+                src="../assets/images/plans/minecraft/emerald.png"
+                alt="Ultimate plan badge"
+              />
+            </div>
+            <h3>Emerald Plan</h3>
+            <div class="plan-price">
+              <span class="price">$3</span>
+              <span class="period">/month</span>
+            </div>
+            <ul class="plan-features">
+              <li><i class="fa-solid fa-microchip"></i> 8 vCPU</li>
+              <li><i class="fa-solid fa-memory"></i> 16 GB RAM</li>
+              <li><i class="fa-solid fa-hard-drive"></i> 120 GB NVMe</li>
+              <li>
+                <i class="fa-solid fa-earth-americas"></i> Global Locations
+              </li>
+            </ul>
+            <a class="btn-start plan-cta" href="#plans">Choose Ultimate</a>
+          </article>
+
+          <article class="plan-card">
+            <div class="plan-badge has-image">
+              <img
+                class="plan-badge-image"
+                src="../assets/images/plans/minecraft/netherite.png"
+                alt="Starter plan badge"
+              />
+            </div>
+            <h3>Netherite Plan</h3>
+            <div class="plan-price">
+              <span class="price">$1</span>
+              <span class="period">/month</span>
+            </div>
+            <ul class="plan-features">
+              <li><i class="fa-solid fa-microchip"></i> 2 vCPU</li>
+              <li><i class="fa-solid fa-memory"></i> 4 GB RAM</li>
+              <li><i class="fa-solid fa-hard-drive"></i> 30 GB NVMe</li>
+              <li><i class="fa-solid fa-shield-halved"></i> DDoS Protection</li>
+            </ul>
+            <a class="btn-start plan-cta" href="#plans">Choose Starter</a>
+          </article>
+
+          <article class="plan-card">
+            <div class="plan-badge has-image">
+              <img
+                class="plan-badge-image"
+                src="../assets/images/plans/minecraft/obsidian.png"
+                alt="Most popular plan badge"
+              />
+            </div>
+            <h3>Obsidian Plan</h3>
+            <div class="plan-price">
+              <span class="price">$2</span>
+              <span class="period">/month</span>
+            </div>
+            <ul class="plan-features">
+              <li><i class="fa-solid fa-microchip"></i> 4 vCPU</li>
+              <li><i class="fa-solid fa-memory"></i> 8 GB RAM</li>
+              <li><i class="fa-solid fa-hard-drive"></i> 60 GB NVMe</li>
+              <li><i class="fa-solid fa-users"></i> Up to 40 players</li>
+            </ul>
+            <a class="btn-start plan-cta" href="#plans">Choose Pro</a>
+          </article>
+
+          <article class="plan-card">
+            <div class="plan-badge has-image">
+              <img
+                class="plan-badge-image"
+                src="../assets/images/plans/minecraft/bedrock.png"
+                alt="Ultimate plan badge"
+              />
+            </div>
+            <h3>Bedrock Plan</h3>
+            <div class="plan-price">
+              <span class="price">$3</span>
+              <span class="period">/month</span>
+            </div>
+            <ul class="plan-features">
+              <li><i class="fa-solid fa-microchip"></i> 8 vCPU</li>
+              <li><i class="fa-solid fa-memory"></i> 16 GB RAM</li>
+              <li><i class="fa-solid fa-hard-drive"></i> 120 GB NVMe</li>
+              <li>
+                <i class="fa-solid fa-earth-americas"></i> Global Locations
+              </li>
+            </ul>
+            <a class="btn-start plan-cta" href="#plans">Choose Ultimate</a>
+          </article>
+
+          <article class="plan-card">
+            <div class="plan-badge has-image">
+              <img
+                class="plan-badge-image"
+                src="../assets/images/plans/minecraft/beacon.png"
+                alt="Starter plan badge"
+              />
+            </div>
+            <h3>Beacon Plan</h3>
+            <div class="plan-price">
+              <span class="price">$1</span>
+              <span class="period">/month</span>
+            </div>
+            <ul class="plan-features">
+              <li><i class="fa-solid fa-microchip"></i> 2 vCPU</li>
+              <li><i class="fa-solid fa-memory"></i> 4 GB RAM</li>
+              <li><i class="fa-solid fa-hard-drive"></i> 30 GB NVMe</li>
+              <li><i class="fa-solid fa-shield-halved"></i> DDoS Protection</li>
+            </ul>
+            <a class="btn-start plan-cta" href="#plans">Choose Starter</a>
+          </article>
+
+          <article class="plan-card">
+            <div class="plan-badge has-image">
+              <img
+                class="plan-badge-image"
+                src="../assets/images/plans/minecraft/thunder.png"
+                alt="Most popular plan badge"
+              />
+            </div>
+            <h3>Thunder Plan</h3>
+            <div class="plan-price">
+              <span class="price">$2</span>
+              <span class="period">/month</span>
+            </div>
+            <ul class="plan-features">
+              <li><i class="fa-solid fa-microchip"></i> 4 vCPU</li>
+              <li><i class="fa-solid fa-memory"></i> 8 GB RAM</li>
+              <li><i class="fa-solid fa-hard-drive"></i> 60 GB NVMe</li>
+              <li><i class="fa-solid fa-users"></i> Up to 40 players</li>
+            </ul>
+            <a class="btn-start plan-cta" href="#plans">Choose Pro</a>
+          </article>
+
+          <article class="plan-card">
+            <div class="plan-badge has-image">
+              <img
+                class="plan-badge-image"
+                src="../assets/images/plans/minecraft/crystal.gif"
+                alt="Ultimate plan badge"
+              />
+            </div>
+            <h3>Crystal Plan</h3>
+            <div class="plan-price">
+              <span class="price">$3</span>
+              <span class="period">/month</span>
+            </div>
+            <ul class="plan-features">
+              <li><i class="fa-solid fa-microchip"></i> 8 vCPU</li>
+              <li><i class="fa-solid fa-memory"></i> 16 GB RAM</li>
+              <li><i class="fa-solid fa-hard-drive"></i> 120 GB NVMe</li>
+              <li>
+                <i class="fa-solid fa-earth-americas"></i> Global Locations
+              </li>
+            </ul>
+            <a class="btn-start plan-cta" href="#plans">Choose Ultimate</a>
+          </article>
+
+        </div>
+      </div>
     </section>
   </body>
 </html>

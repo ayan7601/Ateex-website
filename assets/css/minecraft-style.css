@@ -220,8 +220,15 @@ body {
     width: 100%;
     height: 100%;
     display: block;
-    object-fit: cover;
     z-index: 0;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
 }
 
 .hero-overlay {
@@ -339,12 +346,13 @@ body {
     letter-spacing: -1px;
 }
 
-.plans h5 {
+.plans p {
     text-align: center;
     font-size: 18px;
     margin-bottom: 40px;
     color: #b5b5b5;
-    font-weight: 500;}
+    font-weight: 500;
+}
 
 .plans-btn {
     margin-top: 20px;
@@ -353,6 +361,140 @@ body {
     gap: 16px;
     align-items: center;
     flex-wrap: wrap;
+}
+
+/* Plan Cards */
+.plans-grid {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.plan-card {
+    position: relative;
+    padding: 32px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid transparent;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.plan-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(600px circle at 80% -10%, rgba(0, 212, 255, 0.18), transparent 60%);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.plan-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(0, 212, 255, 0.45);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+}
+
+.plan-card:hover::before {
+    opacity: 1;
+}
+
+.plan-badge {
+    align-self: center;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #e2e8f0;
+    font-weight: 600;
+    z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plan-badge.accent {
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.8), rgba(0, 102, 255, 0.8));
+    color: #00111f;
+}
+
+.plan-badge.has-image {
+    padding: 0;
+    background: transparent;
+}
+
+.plan-badge-image {
+    display: block;
+    height: 90px;
+    width: auto;
+}
+
+.plan-card h3 {
+    align-self: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+    z-index: 1;
+}
+
+.plan-price {
+    align-self: center;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: -25px;
+}
+
+.plan-price .price {
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.plan-price .period {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.plan-features {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 12px;
+    color: rgba(255, 255, 255, 0.85);
+    z-index: 1;
+}
+
+.plan-features li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.plan-features i {
+    color: var(--secondary-color);
+}
+
+.plan-cta {
+    margin-top: auto;
+    width: 100%;
+    justify-content: center;
+    z-index: 1;
+}
+
+@media (max-width: 1024px) {
+    .plans-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
 
 /* ========================================
@@ -690,6 +832,76 @@ body {
 }
 
 /* ========================================
+   INFRASTRUCTURE SECTION
+   ======================================== */
+
+.infrastructure {
+    background: var(--background-color);
+    padding: 80px 20px;
+}
+
+.infrastructure-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 40px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+}
+
+.location {
+    padding-right: 40px;
+}
+
+.location:last-child {
+    padding-right: 0;
+}
+
+.location-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.location-code {
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--primary-color);
+    min-width: 40px;
+}
+
+.location-header h3 {
+    color: #fff;
+    font-size: 24px;
+    margin: 0;
+}
+
+.server-specs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.server-specs li {
+    color: rgba(255, 255, 255, 0.8);
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.server-specs i {
+    color: var(--primary-color);
+}
+
+/* ========================================
    RESPONSIVE DESIGN
    ======================================== */
 
@@ -757,6 +969,14 @@ body {
         grid-template-columns: 1fr;
     }
 
+    .plan-card {
+        padding: 26px;
+    }
+
+    .plan-card:hover {
+        transform: none;
+    }
+
     .pricing-card.featured {
         transform: scale(1);
     }
@@ -786,6 +1006,20 @@ body {
 
     .dropdown:hover .dropdown-menu {
         display: none;
+    }
+
+    .infrastructure-card {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .location {
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+
+    .location:last-child {
+        padding-bottom: 0;
     }
 }
 
