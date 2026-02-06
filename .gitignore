@@ -11,3 +11,4 @@ venv/
 .cache/
 *.log
 Ateex-website.code-workspace
+.github/

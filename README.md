@@ -44,7 +44,15 @@ website/
 │   │   ├── main.js                    # Core JavaScript functionality
 │   │   ├── whmcs-integration.js       # WHMCS API integration
 │   └── videos/
-        └── 
+│       ├── discord/
+│       │   ├──
+│       ├── minecraft/
+│       │   ├──
+│       ├── vps/
+│       │   ├──
+│       └── web/ 
+│           └──
+│
 └── README.md                           # This file
 ```
 
